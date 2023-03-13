@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="因为爱所以爱">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="AAAHang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        Makedown 写法｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="http://example.com/2023/03/10/Makedown/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/blog-style.css">
+
+
+    <!-- Pygments Github CSS -->
+    
+<link rel="stylesheet" href="/css/syntax.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    AAAHang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>Makedown 写法</h1>
+                    
+                    <span class="meta">
+                         作者 AAAHanng
+                        <span>
+                          日期 2023-03-10
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            Makedown 写法
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h2 id="1-标-题"><a href="#1-标-题" class="headerlink" title="1. 标 题"></a>1. 标 题</h2><blockquote>
+<p>#越多字体会更小</p>
+</blockquote>
+<h2 id="2-代-码-块"><a href="#2-代-码-块" class="headerlink" title="2. 代 码 块"></a>2. 代 码 块</h2><blockquote>
+<p>使用&#96;&#96;&#96;&#96;包裹代码</p>
+</blockquote>
+<h2 id="3-列-表"><a href="#3-列-表" class="headerlink" title="3. 列 表"></a>3. 列 表</h2><h3 id="amp-ensp-3-1-无-序"><a href="#amp-ensp-3-1-无-序" class="headerlink" title="&amp;ensp; 3.1  无 序"></a>&amp;ensp; 3.1  无 序</h3><blockquote>
+<p>无序列表支持使用星号 *、加号 +、减号 - 三种风格进行标记。</p>
+</blockquote>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h3 id="amp-ensp-3-2-有-序"><a href="#amp-ensp-3-2-有-序" class="headerlink" title="&amp;ensp; 3.2 有 序"></a>&amp;ensp; 3.2 有 序</h3><blockquote>
+<p>&amp;ensp;使用数字和一个英文句点表示有序列表。<br>&amp;ensp;注意：英文句点后面一定要有一个空格，起到缩进的作用。</p>
+</blockquote>
+<ol>
+<li><ol>
+<li></li>
+</ol>
+</li>
+<li><ol start="2">
+<li></li>
+</ol>
+</li>
+<li><ol start="3">
+<li></li>
+</ol>
+</li>
+</ol>
+<h2 id="4-gt-引-用"><a href="#4-gt-引-用" class="headerlink" title="4. &gt;引 用"></a>4. &gt;引 用</h2><blockquote>
+<p>这就是引用</p>
+</blockquote>
+<h2 id="5-首-行-缩-进"><a href="#5-首-行-缩-进" class="headerlink" title="5. 首 行 缩 进"></a>5. 首 行 缩 进</h2><blockquote>
+<ul>
+<li>&amp;ensp; 半角的空格</li>
+<li>&amp;emsp; 全角的空格</li>
+</ul>
+</blockquote>
+<h2 id="6-字-体"><a href="#6-字-体" class="headerlink" title="6. 字 体"></a>6. 字 体</h2><h3 id="amp-ensp-6-1-粗-体"><a href="#amp-ensp-6-1-粗-体" class="headerlink" title="&amp;ensp; 6.1 粗 体"></a>&amp;ensp; 6.1 粗 体</h3><blockquote>
+<p>&amp;ensp; 粗体使用两个星号 ** 或两个下划线 __ 包裹。<br>&amp;ensp; <strong>粗体</strong></p>
+</blockquote>
+<h3 id="amp-ensp-6-2-斜-体"><a href="#amp-ensp-6-2-斜-体" class="headerlink" title="&amp;ensp; 6.2 斜 体"></a>&amp;ensp; 6.2 斜 体</h3><blockquote>
+<p>&amp;ensp; 粗体使用一个星号 * 或两个下划线 _ 包裹。<br>&amp;ensp; <em>斜体</em></p>
+</blockquote>
+<h2 id="7-图-片"><a href="#7-图-片" class="headerlink" title="7. 图 片"></a>7. 图 片</h2><blockquote>
+<p><code>![图片替代文字](图片地址)</code></p>
+</blockquote>
+<h2 id="8-链-接"><a href="#8-链-接" class="headerlink" title="8. 链 接"></a>8. 链 接</h2><h3 id="8-1-行-内-式-链-接"><a href="#8-1-行-内-式-链-接" class="headerlink" title="8.1 行 内 式 链 接"></a>8.1 行 内 式 链 接</h3><blockquote>
+<p><code>[链接文字](链接地址 &quot;Title&quot;)</code><br><code>例子:[百度一下](https://www.baidu.com/ &quot;点点看&quot;)</code></p>
+</blockquote>
+<ul>
+<li>&amp;ensp;方括号和圆括号之间不能有空格；</li>
+<li>&amp;ensp;Title 在链接地址后使用单引号或双引号括起来，是鼠标停留在链接时显示的文字，可以省略。</li>
+</ul>
+<h2 id="8-2-参-考-式-链-接"><a href="#8-2-参-考-式-链-接" class="headerlink" title="8.2 参 考 式 链 接"></a>8.2 参 考 式 链 接</h2><blockquote>
+<p><code>[链接文字][链接标记]</code><br><code>[链接标记]: 链接地址 &quot;Title&quot; </code></p>
+<ul>
+<li>&amp;emsp;链接标记可以是字母、数字、标点符号的组合；</li>
+<li>&amp;emsp;链接标记不区分大小写；</li>
+<li>&amp;emsp;链接内容（链接地址那行）可以放在当前文件的任意位置（通常放在末尾）；</li>
+<li>&amp;emsp;Title 在链接地址后使用单引号或双引号括起来。</li>
+</ul>
+</blockquote>
+<h3 id="8-3-自-动-链-接"><a href="#8-3-自-动-链-接" class="headerlink" title="8.3 自 动 链 接"></a>8.3 自 动 链 接</h3><blockquote>
+<p><code>我的网站 &lt;https://luhuadong.com&gt;</code><br><code>我的邮箱 &lt;luhuadong@163.com&gt;</code></p>
+</blockquote>
+<h3 id="9-表-格"><a href="#9-表-格" class="headerlink" title="9. 表 格"></a>9. 表 格</h3><table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><code>|  表头   | 表头  |</code><br><code>|  ----  | ----  |</code><br><code>| 单元格  | 单元格 |</code><br><code>| 单元格  | 单元格 |</code></p>
+</blockquote>
+<ul>
+<li>-: 设置内容和标题栏居右对齐。</li>
+<li>:- 设置内容和标题栏居左对齐。</li>
+<li>:-: 设置内容和标题栏居中对齐。</li>
+</ul>
+<blockquote>
+<p><code>| 左对齐 | 右对齐 | 居中对齐 |</code><br><code>| :-----| ----: | :----: |</code><br><code>| 单元格 | 单元格 | 单元格 |</code><br><code>| 单元格 | 单元格 | 单元格 |</code></p>
+</blockquote>
+<h3 id="9-反-斜-杠-x2F"><a href="#9-反-斜-杠-x2F" class="headerlink" title="9. 反 斜 杠 &#x2F;"></a>9. 反 斜 杠 &#x2F;</h3><blockquote>
+<p>&#x2F;*&#x2F; &#x2F;&#x2F;之间可以写符号</p>
+</blockquote>
+<h3 id="10-支持HTMl元素"><a href="#10-支持HTMl元素" class="headerlink" title="10.支持HTMl元素"></a>10.支持HTMl元素</h3><blockquote>
+<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+</blockquote>
+<h3 id="11-支持公式"><a href="#11-支持公式" class="headerlink" title="11.支持公式"></a>11.支持公式</h3><blockquote>
+<p>$f(x)$ $$之间可以写函数表达式</p>
+</blockquote>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2023/03/10/Githubku/" data-toggle="tooltip" data-placement="top"
+                           title="Githubku">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2023/03/10/Blog/" data-toggle="tooltip" data-placement="top"
+                           title="Mac [Hexo] + Github 搭建个人网站">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%A0%87-%E9%A2%98"><span class="toc-text">1. 标 题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BB%A3-%E7%A0%81-%E5%9D%97"><span class="toc-text">2. 代 码 块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%88%97-%E8%A1%A8"><span class="toc-text">3. 列 表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#amp-ensp-3-1-%E6%97%A0-%E5%BA%8F"><span class="toc-text">&amp;ensp; 3.1  无 序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#amp-ensp-3-2-%E6%9C%89-%E5%BA%8F"><span class="toc-text">&amp;ensp; 3.2 有 序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-gt-%E5%BC%95-%E7%94%A8"><span class="toc-text">4. &gt;引 用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A6%96-%E8%A1%8C-%E7%BC%A9-%E8%BF%9B"><span class="toc-text">5. 首 行 缩 进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%AD%97-%E4%BD%93"><span class="toc-text">6. 字 体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#amp-ensp-6-1-%E7%B2%97-%E4%BD%93"><span class="toc-text">&amp;ensp; 6.1 粗 体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#amp-ensp-6-2-%E6%96%9C-%E4%BD%93"><span class="toc-text">&amp;ensp; 6.2 斜 体</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%9B%BE-%E7%89%87"><span class="toc-text">7. 图 片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%93%BE-%E6%8E%A5"><span class="toc-text">8. 链 接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E8%A1%8C-%E5%86%85-%E5%BC%8F-%E9%93%BE-%E6%8E%A5"><span class="toc-text">8.1 行 内 式 链 接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-2-%E5%8F%82-%E8%80%83-%E5%BC%8F-%E9%93%BE-%E6%8E%A5"><span class="toc-text">8.2 参 考 式 链 接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E8%87%AA-%E5%8A%A8-%E9%93%BE-%E6%8E%A5"><span class="toc-text">8.3 自 动 链 接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E8%A1%A8-%E6%A0%BC"><span class="toc-text">9. 表 格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E5%8F%8D-%E6%96%9C-%E6%9D%A0-x2F"><span class="toc-text">9. 反 斜 杠 &#x2F;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%94%AF%E6%8C%81HTMl%E5%85%83%E7%B4%A0"><span class="toc-text">10.支持HTMl元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E6%94%AF%E6%8C%81%E5%85%AC%E5%BC%8F"><span class="toc-text">11.支持公式</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; AAAHang 2023
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a target="_blank" rel="noopener" href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/blog.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://example.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
+</body>
+
+</html>

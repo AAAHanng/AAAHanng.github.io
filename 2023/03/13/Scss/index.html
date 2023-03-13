@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="因为爱所以爱">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="AAAHang" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        Scss｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="http://example.com/2023/03/13/Scss/">
+
+    <!-- Bootstrap Core CSS -->
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/blog-style.css">
+
+
+    <!-- Pygments Github CSS -->
+    
+<link rel="stylesheet" href="/css/syntax.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<style>
+
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    AAAHang
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>Scss</h1>
+                    
+                    <span class="meta">
+                         作者 AAAHanng
+                        <span>
+                          日期 2023-03-13
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            Scss
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p> scss</p>
+<h1 id="1-Scss一种预处理css"><a href="#1-Scss一种预处理css" class="headerlink" title="1.Scss一种预处理css"></a>1.Scss一种预处理css</h1><h2 id="1-1与之相似less-stylue"><a href="#1-1与之相似less-stylue" class="headerlink" title="1.1与之相似less stylue"></a>1.1与之相似less stylue</h2><blockquote>
+<p>less 语法更加接近于 css  </p>
+<p>stylue 是一个轻量级的预处理 css</p>
+</blockquote>
+<h1 id="2-vscode-下载插件"><a href="#2-vscode-下载插件" class="headerlink" title="2.vscode 下载插件"></a>2.vscode 下载插件</h1><blockquote>
+<p>live sass compiler 在插件库 在设置内</p>
+<p>[Github地址][<a target="_blank" rel="noopener" href="https://github.com/ritwickdey/vscode-live-sass-compiler]">https://github.com/ritwickdey/vscode-live-sass-compiler]</a> 在这个地址之中 可以看到作者所给出的设置</p>
+</blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="comment">/* 压缩设置 */</span></span><br><span class="line">    <span class="attr">&quot;liveSassCompile.settings.formats&quot;</span><span class="punctuation">:</span><span class="punctuation">[</span></span><br><span class="line">        <span class="comment">// This is Default.</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;format&quot;</span><span class="punctuation">:</span> <span class="string">&quot;compressed&quot;</span><span class="punctuation">,</span> <span class="comment">// nested, expanded, compact, compressed</span></span><br><span class="line">            <span class="attr">&quot;extensionName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;.min.css&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;savePath&quot;</span><span class="punctuation">:</span> <span class="string">&quot;~/../css&quot;</span>  <span class="comment">// 为 null 表示当前目录</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">/* 排除目录 */</span></span><br><span class="line">    <span class="attr">&quot;liveSassCompile.settings.excludeList&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">         </span><br><span class="line">        <span class="string">&quot;**/node_modules/**&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;.vscode/**&quot;</span> </span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">/* 是否生成对应的map */</span></span><br><span class="line">    <span class="attr">&quot;liveSassCompile.settings.generateMap&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment">/* 是否添加兼容前缀 如： -webkit- , -moz- ... */</span></span><br><span class="line">    <span class="attr">&quot;liveSassCompile.settings.autoprefix&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="string">&quot;&gt; 1%&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;last 2 versions&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"> </span><br><span class="line">    <span class="attr">&quot;liveSassCompile.settings.showOutputWindow&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="3-scss语法"><a href="#3-scss语法" class="headerlink" title="3.scss语法"></a>3.scss语法</h1><h2 id="3-1嵌套"><a href="#3-1嵌套" class="headerlink" title="3.1嵌套"></a>3.1嵌套</h2><blockquote>
+<p>scss</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.container &#123;</span><br><span class="line">    .outline &#123;</span><br><span class="line">      stroke-dasharray: 25 25;</span><br><span class="line">      stroke-dashoffset: -588;</span><br><span class="line">      .outline&#123;</span><br><span class="line">        padding: 10px;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    .outline1 &#123;</span><br><span class="line">        stroke-dasharray: 50 50;</span><br><span class="line">        stroke-dashoffset: -275;</span><br><span class="line">      &#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>scss 编译后</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.outline</span> &#123;</span><br><span class="line">  stroke-dasharray: <span class="number">25</span> <span class="number">25</span>;</span><br><span class="line">  stroke-dashoffset: -<span class="number">588</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.outline</span> <span class="selector-class">.outline</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.outline1</span> &#123;</span><br><span class="line">  stroke-dasharray: <span class="number">50</span> <span class="number">50</span>;</span><br><span class="line">  stroke-dashoffset: -<span class="number">275</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>hover写法</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="selector-class">.outline</span> &#123;</span><br><span class="line">        stroke-dasharray: <span class="number">50</span> <span class="number">50</span>;</span><br><span class="line">        stroke-dashoffset: -<span class="number">275</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">        <span class="attribute">padding</span>: <span class="number">3px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>编译后</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.outline</span> &#123;</span><br><span class="line">  stroke-dasharray: <span class="number">50</span> <span class="number">50</span>;</span><br><span class="line">  stroke-dashoffset: -<span class="number">275</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">3px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当然也可以使用 <strong>&amp;</strong> &amp;就相当于指代父元素名称</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="selector-class">.outline</span> &#123;</span><br><span class="line">        stroke-dasharray: <span class="number">50</span> <span class="number">50</span>;</span><br><span class="line">        stroke-dashoffset: -<span class="number">275</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">a</span>&#123;</span><br><span class="line">        &amp;<span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">        <span class="attribute">padding</span>: <span class="number">3px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>同样属性也可以使用嵌套</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="selector-tag">a</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>: red;</span><br><span class="line">        <span class="attribute">font</span>: &#123;</span><br><span class="line">            size: red;</span><br><span class="line">            weight: <span class="number">30px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.contain</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="attribute">font-size</span>: red;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意 属性冒号后要空格</p>
+</blockquote>
+<h2 id="3-2占位符-继承"><a href="#3-2占位符-继承" class="headerlink" title="3.2占位符(继承)"></a>3.2占位符(继承)</h2><blockquote>
+<p>Sass</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>%base&#123;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">    <span class="attribute">background-color</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.card</span> &#123;</span><br><span class="line">    <span class="keyword">@extend</span> %base</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.card2 &#123;</span><br><span class="line">    <span class="keyword">@extend</span> %base;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>编译后css</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span><span class="selector-class">.card2</span>, <span class="selector-class">.demo</span><span class="selector-class">.card</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: white;</span><br><span class="line">  <span class="attribute">background-color</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.card2</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-3注释"><a href="#3-3注释" class="headerlink" title="3.3注释"></a>3.3注释</h2><blockquote>
+<p>scss</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="selector-tag">a</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>: red;</span><br><span class="line">        <span class="attribute">font</span>: &#123;</span><br><span class="line">            size: red;</span><br><span class="line">            weight: <span class="number">30px</span>;</span><br><span class="line">            <span class="comment">/* 这是个demo</span></span><br><span class="line"><span class="comment">            这是个demo */</span></span><br><span class="line">            <span class="comment">// 这是个demo</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>多行会显示 而单行不会</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@charset</span> <span class="string">&quot;UTF-8&quot;</span>;</span><br><span class="line"><span class="selector-class">.contain</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="attribute">font-size</span>: red;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="comment">/* 这是个demo</span></span><br><span class="line"><span class="comment">  这是个demo */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-4变量"><a href="#3-4变量" class="headerlink" title="3.4变量"></a>3.4变量</h2><h3 id="3-4-1全局变量"><a href="#3-4-1全局变量" class="headerlink" title="3.4.1全局变量"></a>3.4.1全局变量</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$root : red;</span><br><span class="line">.contain&#123;</span><br><span class="line">    background-color: $root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>局部变量还可以加 !global变成全局变量</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="variable">$root</span> : red !global;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="variable">$root</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.p</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="variable">$root</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-4-2局部变量"><a href="#3-4-2局部变量" class="headerlink" title="3.4.2局部变量"></a>3.4.2局部变量</h3><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="variable">$root</span> : red;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="variable">$root</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-4-3数据类型"><a href="#3-4-3数据类型" class="headerlink" title="3.4.3数据类型"></a>3.4.3数据类型</h3><blockquote>
+<ol>
+<li><h5 id="字符串-Strings"><a href="#字符串-Strings" class="headerlink" title="字符串 (Strings)"></a>字符串 (Strings)</h5></li>
+<li><h5 id="数字-Numbers"><a href="#数字-Numbers" class="headerlink" title="数字 (Numbers)"></a>数字 (Numbers)</h5></li>
+<li><h5 id="颜色-Colors"><a href="#颜色-Colors" class="headerlink" title="颜色 (Colors)"></a>颜色 (Colors)</h5></li>
+<li><h5 id="布尔型-Booleans"><a href="#布尔型-Booleans" class="headerlink" title="布尔型 (Booleans)"></a>布尔型 (Booleans)</h5></li>
+<li><h5 id="空值-Null"><a href="#空值-Null" class="headerlink" title="空值 (Null)"></a>空值 (Null)</h5></li>
+<li><h5 id="数组-Lists"><a href="#数组-Lists" class="headerlink" title="数组 (Lists)"></a>数组 (Lists)</h5></li>
+<li><h5 id="映射-Maps"><a href="#映射-Maps" class="headerlink" title="映射 (Maps)"></a>映射 (Maps)</h5></li>
+</ol>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$string1</span>: <span class="string">&quot;Sample 1&quot;</span>;</span><br><span class="line"><span class="variable">$string2</span>: <span class="string">&#x27;Sample 2&#x27;</span>;</span><br><span class="line"><span class="variable">$string3</span>: red;</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="variable">$string1</span>;</span><br><span class="line">    <span class="attribute">content</span>: <span class="variable">$string2</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="variable">$string3</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译后的 css</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;Sample 1&quot;</span>;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;Sample 2&quot;</span>;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$map</span>: (</span><br><span class="line">  key1: value1,</span><br><span class="line">  key2: value2,</span><br><span class="line">  key3: value3</span><br><span class="line">)</span><br><span class="line"><span class="built_in">map-get</span>(map, key)</span><br><span class="line"><span class="variable">$font-sizes</span>: (<span class="string">&quot;small&quot;</span>: <span class="number">12px</span>,</span><br><span class="line">  <span class="string">&quot;normal&quot;</span>: <span class="number">18px</span>,</span><br><span class="line">  <span class="string">&quot;large&quot;</span>: <span class="number">24px</span>)</span><br><span class="line"><span class="built_in">map-get</span>(<span class="variable">$font-sizes</span>, <span class="string">&quot;small&quot;</span>)</span><br><span class="line">结果: <span class="number">12px</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-5混合模式"><a href="#3-5混合模式" class="headerlink" title="3.5混合模式"></a>3.5混合模式</h2><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> block&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="keyword">@include</span> block()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//scss编译之后</span><br><span class="line"></span><br><span class="line">.contain &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>语句嵌套</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> block&#123;</span><br><span class="line">    text&#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="keyword">@include</span> block()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//scss编译之后</span><br><span class="line"></span><br><span class="line">.contain text &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>语句带参数</p>
+</blockquote>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@mixin</span> block(<span class="variable">$item</span>)&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: <span class="variable">$item</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.contain</span>&#123;</span><br><span class="line">    <span class="keyword">@include</span> block(center)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//scss编译</span><br><span class="line"></span><br><span class="line">.contain &#123;</span><br><span class="line">  -webkit-box-pack: center;</span><br><span class="line">      -ms-<span class="attribute">flex</span>-pack: center;</span><br><span class="line">          <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ol>
+<li>混合指令 ( @mixin ) 是可以重复使用的一组 Css 声明；</li>
+<li>有助于减少重复代码，只需声明一次就可以在文件中反复引用；</li>
+<li>包含所有 Css 规则以及绝大部分 Sass 规则，甚至通过参数引入变量；</li>
+<li>使用参数时，建议加上默认值。</li>
+</ol>
+</blockquote>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2023/03/10/Githubku/" data-toggle="tooltip" data-placement="top"
+                           title="Githubku">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Scss%E4%B8%80%E7%A7%8D%E9%A2%84%E5%A4%84%E7%90%86css"><span class="toc-text">1.Scss一种预处理css</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1%E4%B8%8E%E4%B9%8B%E7%9B%B8%E4%BC%BCless-stylue"><span class="toc-text">1.1与之相似less stylue</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-vscode-%E4%B8%8B%E8%BD%BD%E6%8F%92%E4%BB%B6"><span class="toc-text">2.vscode 下载插件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-scss%E8%AF%AD%E6%B3%95"><span class="toc-text">3.scss语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1%E5%B5%8C%E5%A5%97"><span class="toc-text">3.1嵌套</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2%E5%8D%A0%E4%BD%8D%E7%AC%A6-%E7%BB%A7%E6%89%BF"><span class="toc-text">3.2占位符(继承)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3%E6%B3%A8%E9%87%8A"><span class="toc-text">3.3注释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4%E5%8F%98%E9%87%8F"><span class="toc-text">3.4变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="toc-text">3.4.1全局变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-text">3.4.2局部变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-3%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-text">3.4.3数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2-Strings"><span class="toc-text">字符串 (Strings)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E5%AD%97-Numbers"><span class="toc-text">数字 (Numbers)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%A2%9C%E8%89%B2-Colors"><span class="toc-text">颜色 (Colors)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%83%E5%B0%94%E5%9E%8B-Booleans"><span class="toc-text">布尔型 (Booleans)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A9%BA%E5%80%BC-Null"><span class="toc-text">空值 (Null)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E7%BB%84-Lists"><span class="toc-text">数组 (Lists)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%98%A0%E5%B0%84-Maps"><span class="toc-text">映射 (Maps)</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5%E6%B7%B7%E5%90%88%E6%A8%A1%E5%BC%8F"><span class="toc-text">3.5混合模式</span></a></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
+</article>
+
+
+
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; AAAHang 2023
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a target="_blank" rel="noopener" href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/blog.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://example.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
+</body>
+
+</html>
